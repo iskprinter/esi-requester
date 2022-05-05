@@ -12,7 +12,7 @@ if (!DB_URL || DB_URL === '') {
 // process.env.MONGO_INITDB_ROOT_USERNAME
 // process.env.MONGO_INITDB_ROOT_PASSWORD
 
-const DB_NAME = 'isk-printer';
+const DB_NAME = 'iskprinter';
 const TYPE_COLLECTION_NAME = 'types';
 const MAX_RETRIES = 4;
 
