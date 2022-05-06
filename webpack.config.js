@@ -3,6 +3,9 @@ const path = require('path');
 module.exports = {
   entry: './src/app.ts',
   devtool: 'inline-source-map',
+  externals: {
+    saslprep: 'saslprep'
+  },
   mode: 'production',
   module: {
     rules: [{
