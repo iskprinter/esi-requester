@@ -3,6 +3,8 @@ import axios from 'axios';
 import { MongoClient, Collection } from 'mongodb';
 import { Observable, Subscriber } from 'rxjs';
 
+// This import is needed to quiet a warning
+import saslprep from 'saslprep';
 
 const DB_URL = process.env.DB_URL;
 if (!DB_URL || DB_URL === '') {
